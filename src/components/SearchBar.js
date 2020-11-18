@@ -5,12 +5,12 @@ class SearchBar extends React.Component{
         user_input:''
     }
     onChange=(e)=>{
-        this.setState({user_input:e.target.value})
+        this.setState({user_input:e.target.value});
     }
     onSubmit = (e)=>{
-        e.preventDefault()
+        e.preventDefault();
         this.props.grab_data(this.state.user_input);
-        this.setState({user_input:''})
+        this.setState({user_input:''});
     }
     render(){
         return(

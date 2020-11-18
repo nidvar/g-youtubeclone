@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+const x = 'AIzaSyBXAyimeyDQaq0xckMpjEG4NzYGJR_XTbg'
 const API = 'AIzaSyAI3n3R9Tx1vCP4sOXMtSxR_02B7__ua6s';
 
 const file = axios.create({
@@ -7,7 +7,7 @@ const file = axios.create({
     params:{
         part:'snippet',
         maxResults:5,
-        key: API
+        key: x
     }
 })
 
