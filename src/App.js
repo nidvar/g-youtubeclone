@@ -34,14 +34,18 @@ class App extends React.Component{
       <div className="App">
         <h3>Search Video</h3>
         <SearchBar grab_data={this.grab_data} />
-        <div className="row">
-          <div className="col-8">
-            
-            <VideoDetail chosen_video={this.state.chosen_video} />
+        <div className="Display">
+
+
+            <div className="VideoDetail">
+              <VideoDetail chosen_video={this.state.chosen_video} />
             </div>
-          <div className="col-4">
-            <VideoList grab_video={this.grab_video} list_of_videos={this.state.list_of_videos} />
-          </div>
+            <div className="VideoList">
+              <VideoList grab_video={this.grab_video} list_of_videos={this.state.list_of_videos} />
+            </div>
+
+
+            
         </div>
         
       

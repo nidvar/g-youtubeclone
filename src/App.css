@@ -3,6 +3,12 @@ body{
   padding:0;
   box-sizing: border-box;
 }
+h3{
+  margin: 10px 0 10px 0;
+}
+.Display{
+  display:flex;
+}
 
 .SearchBar{
   margin: 10px 0 10px 0;
@@ -28,10 +34,49 @@ body{
 }
 
 .VideoDetail{
-  padding:10px;
   border-radius: 5px;
+  padding:5px;
+  width:100%;
 }
 
 .Detail{
   margin-top:15px;
+}
+
+.VideoList{
+  min-width:500px;
+}
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .App{
+    width:90%;
+  }
+  .Display{
+    display:flex;
+    flex-direction: column;
+  }
+  .SingleVideo{
+    display:flex;
+    flex-direction: column;
+  }
+  .SingleVideo img{
+    width:100%;
+  }
+  iframe{
+    width:100%;
+  }
 }
